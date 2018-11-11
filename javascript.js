@@ -71,12 +71,13 @@ function filtrering() {
 
 function visPosts() {
 
-	console.log(events);
+	alert(eventTypeFilter);
 
+	postContainer.innerHTML = "";
 
 	events.forEach(event => {
 
-		if (event.acf.eventType == eventTypeFilter || eventTypeFilter == "alle") {
+		if (event.acf.eventtype == eventTypeFilter || eventTypeFilter == "alle") {
 			console.log("klon");
 
 
