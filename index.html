@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gruppe 6 code</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<img src="assets/banner.jpg" alt="banner" id="banner_img">
+	<a href="index.html"><img src="assets/logo_endeligt.png" alt="logo" id="logo_frontsite"></a>
+
+	<div id="sideNavigation" class="sidenav">
+		<a href="#" onclick="closeNav()"> <img src="assets/pil.png" alt="pil" class="pil_img pilHoejre"></a>
+		<a href="svgtest.html">Etagerne</a>
+		<a href="#">Menu Punkt 2</a>
+		<a href="#">Menu Punkt 3</a>
+
+	</div>
+
+	<nav class="topnav">
+		<a href="#" onclick="openNav()">
+            <img src="assets/pil.png" alt="pil" class="pil_img" class="pilVenstre">
+        </a>
+	</nav>
+
+
+
+	<div id="main">
+		<div id="sort_button">
+			<a href="#" onclick="visModal()">
+				<p style="text-decoration:none">Vælg Events</p>
+			</a>
+
+
+
+
+		</div>
+		<div id="modal_vindue">
+			<div id="menuVindue">
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap1" data-eventType="alle" class="sort_item">
+					<p>Alle</p>
+				</div>
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap2" data-eventType="Film" class="sort_item">
+					<p>Film</p>
+				</div>
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap3" data-eventType="Musik" class="sort_item">
+					<p>Musik</p>
+				</div>
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap4" data-eventType="Ord" class="sort_item">
+					<p>Ord</p>
+				</div>
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap5" data-eventType="Scenekunst" class="sort_item">
+					<p>Scenekunst</p>
+				</div>
+				<div class="modal_knap">
+					<img src="assets/.png" alt="sorterings knap6" data-eventType="Andet" class="sort_item">
+					<p>Andet</p>
+				</div>
+			</div>
+
+		</div>
+		<div id="indholdsArea">
+			<!--Templaten skal være her	-->
+			<section class="container">
+
+
+			</section>
+			<template data-template>
+                <article class="postListview">
+
+
+                    <img data-img id="template_img">
+                    	<div id="template_container">
+                    	<h2 data-title id="template_tittel"></h2>
+                    	<p data-text id="template_desc"></p>
+                   		<p data-dato id="template_dato"></p>
+                   		<p data-tid id="template_tid"></p>
+                   		<p data-sted id="template_sted"></p>
+                   		<p data-genre id="template_genre"></p>
+                  		<p data-pris id="template_pris"></p>
+					</div>
+
+                </article>
+
+
+            </template>
+		</div>
+	</div>
+	<div id="nyhedsbrev">
+		<a href="#" onclick="visForm()"><img src="assets/nyhedsbrev_endeligt.png" alt="" id="nyhedsbrevImg"></a>
+
+		<div id="nyhedsbrevForm" class="toggleNyhedsbrev2">
+			<p id="nyhedsTxt">Meld dig til nyhedsbrev!</p>
+			<input type="email" id="nyhedsArea" value="Skriv din Email her:">
+			<input type="submit" id="nyhedsSubmit">
+
+		</div>
+
+	</div>
+	<div id="footer">
+		<div id="footerTxt">
+			<ul>
+				<li>HUSET-KBH</li>
+				<li>Rådhusstræde 13</li>
+				<li>1466 København K</li>
+				<li>Tlf: 21 51 21 51</li>
+				<li>info@huset-kbh.dk</li>
+			</ul>
+
+
+		</div>
+		<div id="footerLogo">
+			<div class="footerLogo_logo"><img src="assets/tuborg.png" alt="logo1" class="sponsor"></div>
+			<div class="footerLogo_logo"><img src="assets/kbh.png" alt="logo1" class="sponsor"></div>
+			<div class="footerLogo_logo"><img src="assets/DK_Live.png" alt="logo1" class="sponsor"></div>
+
+		</div>
+
+	</div>
+
+
+	<script src="javascript.js"></script>
+
+</body>
+
+</html>

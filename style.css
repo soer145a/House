@@ -1,0 +1,648 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+article {
+	position: relative;
+
+}
+
+#indholdsArea {
+	margin-top: 15vw;
+}
+
+#banner_img {
+	width: 100%;
+	height: 35vw;
+	object-fit: cover;
+	position: absolute;
+	z-index: 0;
+}
+
+#logo_frontsite {
+	width: 10vw;
+	height: 10vw;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+	z-index: 2;
+}
+
+#sort_button {
+	width: 40vw;
+	height: 10vw;
+	z-index: 3;
+	left: 30%;
+	top: 28vw;
+	position: absolute;
+	background-color: black;
+	border-radius: 10vw;
+
+
+}
+
+#sort_button p {
+	margin: 1.7vw 0 0 7.5vw;
+	padding: 0;
+	width: 25vw;
+	font-size: 1.8em;
+	color: white;
+
+
+}
+
+#sort_button a {
+	text-decoration: none;
+}
+
+#sort_button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+#sort_button:active {
+	transform: scale(0.95);
+	cursor: pointer;
+}
+
+#modal_vindue {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100vw;
+	height: 200%;
+	pointer-events: none;
+	transition: 0.5s;
+	z-index: 10;
+
+}
+
+#menuVindue {
+	background-color: rgb(157, 157, 157);
+	position: absolute;
+	width: 80vw;
+	height: 120vw;
+	top: 20vw;
+	left: 9vw;
+	display: grid;
+	margin: 0;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	z-index: 11;
+}
+
+
+.modal_knap img {
+	width: 40vw;
+
+	margin-bottom: -29vw;
+	z-index: 19;
+}
+
+.modal_knap p {
+	text-align: center;
+	font-size: 2em;
+	z-index: 20;
+	color: white;
+
+
+}
+
+.modal_knap {
+	height: 40vw;
+}
+
+
+#footer {
+	width: 96.5vw;
+	border-style: solid;
+	border-color: black;
+	height: 20vw;
+	bottom: 0vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#footer li {
+	list-style: none;
+}
+
+#footerTxt {
+	background-color: #fce5f1;
+	margin: 0;
+	height: 20vw;
+}
+
+#footerLogo {
+	margin: 0;
+	height: 20vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footerLogo_logo {
+	height: 9vw;
+	margin: auto;
+}
+
+.sponsor {
+	height: 9vw;
+	object-fit: cover;
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 2vw;
+
+}
+
+.pil_img {
+	width: 3vw;
+}
+
+.pilHoejre {
+	transform: rotate(180deg) scale(1.5);
+	position: absolute;
+	top: 3vw;
+	right: 3vw;
+	z-index: 40;
+
+}
+
+#template_container {
+	position: absolute;
+	bottom: 0vw;
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+	width: 97vw;
+	height: 10vw;
+
+}
+
+
+#template_tittel {
+	position: absolute;
+	bottom: 5vw;
+	margin: 0;
+	left: 1vw;
+
+}
+
+#template_img {
+	width: 97vw;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+
+
+#template_desc {
+	display: none;
+}
+
+#template_tid {
+	position: absolute;
+	right: 1vw;
+	bottom: 4vw;
+}
+
+#template_sted {
+	position: absolute;
+	right: 1vw;
+	bottom: 0;
+	margin: 0;
+
+}
+
+#template_genre {
+	position: absolute;
+	left: 1vw;
+	bottom: 2vw;
+	margin: 0;
+}
+
+#template_pris {
+	position: absolute;
+	right: 1vw;
+	bottom: 3.5vw;
+	margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidenav {
+	height: 100%;
+
+	width: 0;
+
+	position: fixed;
+
+	z-index: 30;
+
+	top: 0;
+	right: 0;
+	background-color: lightgray;
+
+	overflow-x: hidden;
+
+	padding-top: 60px;
+
+	transition: 0.2s;
+
+
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	transform: scale(1.4);
+}
+
+
+
+#main {
+	transition: margin-left .5s;
+
+	overflow: hidden;
+	width: 100%;
+
+	margin-top: 25vw;
+}
+
+.topnav {
+	background-color: white;
+	overflow: hidden;
+	width: 8.5vw;
+}
+
+.topnav a {
+	position: absolute;
+	right: 1vw;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	transform: scale(1.4);
+}
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+a svg {
+	transition: all .5s ease;
+
+	&:hover {
+		#transform: rotate(180deg);
+	}
+
+}
+
+#ico {
+	display: none;
+}
+
+.menu {
+	background: #000;
+	display: none;
+	padding: 5px;
+	width: 320px;
+	@include border-radius(5px);
+
+	#transition: all 0.5s ease;
+
+	a {
+		display: block;
+		color: #fff;
+		text-align: center;
+		padding: 10px 2px;
+		margin: 3px 0;
+		text-decoration: none;
+		background: #444;
+
+		&:nth-child(1) {
+			margin-top: 0;
+			@include border-radius(3px 3px 0 0);
+		}
+		&:nth-child(5) {
+			margin-bottom: 0;
+			@include border-radius(0 0 3px 3px);
+		}
+
+		&:hover {
+			background: #555;
+		}
+	}
+}
+
+#nyhedsbrev {
+
+	position: fixed;
+	bottom: 22vw;
+	right: 2vw;
+
+	cursor: pointer;
+
+}
+
+#nyhedsbrevImg {
+	width: 13vw;
+	border-radius: 10vw;
+	z-index: 2;
+
+}
+
+#nyhedsbrevForm {
+	background-color: #fce5f1;
+	position: inherit;
+
+	height: 13vw;
+	bottom: 22.7vw;
+	z-index: -1;
+	border-radius: 10vw;
+
+}
+
+#nyhedsTxt {
+	opacity: 0;
+	transition: 1s;
+	margin: 4vw 0 0 4vw;
+}
+
+#nyhedsArea {
+	opacity: 0;
+	transition: 0.2s;
+	margin: 0vw 0 0 4vw;
+
+}
+
+#nyhedsSubmit {
+	opacity: 0;
+}
+
+.toggleNyhedsbrev1 {
+	opacity: 1;
+	width: 60vw;
+	right: 2vw;
+	transition: 0.3s;
+}
+
+.toggleNyhedsbrev2 {
+	opacity: 1;
+	width: 13vw;
+}
+
+.toggleShow {
+	opacity: 1 !important;
+
+}
+
+/*-------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+	.container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column: 2/5;
+		grid-gap: 1vw;
+	}
+	#indholdsArea {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+	#main {
+		margin-top: 15vw;
+	}
+
+	#template_img {
+		width: 20vw;
+	}
+	#template_container {
+		width: 20vw;
+		height: 5vw;
+	}
+	#sort_button {
+		height: 4vw;
+		width: 10vw;
+		top: 23vw;
+		margin: 0 0vw 0 17.5vw;
+
+	}
+	#sort_button P {
+		margin: 1vw 0 0 1vw;
+	}
+	#banner_img {
+		height: 25vw
+	}
+	#nyhedsbrev {
+		bottom: 2vw;
+		width: 5vw;
+		height: 5vw;
+	}
+	#nyhedsbrevForm {
+		bottom: 2vw;
+		width: 5vw;
+		height: 5vw;
+	}
+	#nyhedsbrevImg {
+		width: 5vw;
+	}
+	.toggleNyhedsbrev1 {
+		opacity: 1;
+		width: 20vw !important;
+		transition: 0.3s;
+	}
+
+	.toggleNyhedsbrev2 {
+		opacity: 1;
+		width: 5vw;
+	}
+	#nyhedsTxt {
+		opacity: 0;
+		transition: 1s;
+		margin: 1.5vw 0 0 2vw;
+	}
+
+	#nyhedsArea {
+		opacity: 0;
+		transition: 0.2s;
+		margin: 0vw 0 0 2vw;
+
+	}
+
+	#nyhedsSubmit {
+		opacity: 0;
+	}
+	.modal_knap img {
+		width: 10vw;
+	}
+	.modal_knap {
+		height: 10vw;
+	}
+	#modal_vindue {
+		height: 100%;
+
+	}
+	#menuVindue {
+		height: 40vw;
+		top: 5vw;
+	}
+	#footer {
+		width: 98.8vw;
+		border-style: solid;
+		border-color: black;
+		height: 10vw;
+		bottom: 0vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#footer li {
+		list-style: none;
+	}
+
+	#footerTxt {
+		background-color: #fce5f1;
+		margin: 0;
+		height: 10vw;
+	}
+
+	#footerLogo {
+		margin: 0;
+		height: 10vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+
+	.footerLogo_logo {
+		height: 4vw;
+		margin: 1vw 0 0 2vw;
+
+	}
+	.sponsor {
+		height: 8vw;
+	}
+	.sidenav a {
+		margin: 5vw 0 0 4vw;
+		text-decoration: none;
+		font-size: 2em;
+
+		color: #818181;
+		display: block;
+		transition: 0.3s
+	}
+
+	.pilHoejre {
+		transform: rotate(180deg);
+		position: absolute;
+		top: 3vw;
+		right: 3vw;
+		z-index: 40;
+
+	}
+	.pilVenstre {
+		transform: scale(1);
+	}
+
+	.pil_img {
+		width: 3vw;
+		right: 3vw;
+		top: 3vw;
+		position: absolute;
+		transform: scale(0.8);
+
+	}
+
+	.navi {
+
+		z-index: 50;
+		right: 0vw;
+		position: absolute;
+		right: 0vw;
+		font-size: 1.3em;
+		
+		height: 3vw;
+		background-color: rgba(255, 150, 150, 0.3);
+
+
+	}
+
+	.navi a {
+
+		
+		color: white;
+		font-family: 'Nunito', sans-serif;
+		text-decoration: none;
+		position: relative;
+		right: 0;
+		top: 0.7vw;
+
+
+	}
+
+
+
+	.navi a:hover {
+
+		padding: 1vw;
+		color: #D3072A;
+		font-family: 'Nunito', sans-serif;
+		text-decoration: none;
+	}
+
+
+}
