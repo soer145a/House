@@ -102,9 +102,8 @@ article {
 }
 
 
-.modal_knap img {
+.modal_knap {
     width: 40vw;
-
     margin-bottom: -29vw;
     z-index: 19;
 }
@@ -596,12 +595,16 @@ a svg {
         opacity: 0;
     }
 
-    .modal_knap img {
+    .modal_knap png {
         width: 10vw;
     }
 
-    .modal_knap {
-        height: 10vw;
+    .modal_knap {}
+
+    img.sort_item {
+        position: absolute;
+        height: 12vw;
+
     }
 
     #modal_vindue {
