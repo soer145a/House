@@ -9,129 +9,127 @@ let dest = document.querySelector(".data-container");
 
 async function getJSON() {
 
-	let musicJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/musikevents");
-	let musicev = await musicJson.json();
+    let musicJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/musikevents");
+    let musicev = await musicJson.json();
 
-	musicev.forEach(event => {
+    musicev.forEach(event => {
 
-		events.push(event);
-	});
-
-
-	let filmJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/filmevents");
-	let filmev = await filmJson.json();
-
-	filmev.forEach(event => {
-
-		events.push(event);
-	});
-
-	let ordJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/ordevents");
-	let ordev = await ordJson.json();
-
-	ordev.forEach(event => {
-
-		events.push(event);
-	});
+        events.push(event);
+    });
 
 
-	let scenekunstJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/scenekunst");
-	let scenekunstev = await scenekunstJson.json();
+    let filmJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/filmevents");
+    let filmev = await filmJson.json();
 
-	scenekunstev.forEach(event => {
+    filmev.forEach(event => {
 
-		events.push(event);
-	});
+        events.push(event);
+    });
 
-	let andetJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/andet");
-	let andetev = await andetJson.json();
+    let ordJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/ordevents");
+    let ordev = await ordJson.json();
 
-	andetev.forEach(event => {
+    ordev.forEach(event => {
 
-		events.push(event);
+        events.push(event);
+    });
 
-	});
+
+    let scenekunstJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/scenekunst");
+    let scenekunstev = await scenekunstJson.json();
+
+    scenekunstev.forEach(event => {
+
+        events.push(event);
+    });
+
+    let andetJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/andet");
+    let andetev = await andetJson.json();
+
+    andetev.forEach(event => {
+
+        events.push(event);
+
+    });
 
 
-	visPosts();
+    visPosts();
 }
 
 document.querySelectorAll(".sort_item").forEach(knap => {
-	knap.addEventListener("click", filtrering);
+    knap.addEventListener("click", filtrering);
 })
 
 function filtrering() {
 
-	console.log("filter Aply");
-	eventTypeFilter = this.getAttribute("data-eventType");
-	console.log(eventTypeFilter);
-	visPosts();
+    console.log("filter Aply");
+    eventTypeFilter = this.getAttribute("data-eventType");
+    console.log(eventTypeFilter);
+    visPosts();
 }
 
 
 function visPosts() {
 
-	alert(eventTypeFilter);
+    postContainer.innerHTML = "";
 
-	postContainer.innerHTML = "";
+    events.forEach(event => {
 
-	events.forEach(event => {
-
-		if (event.acf.eventtype == eventTypeFilter || eventTypeFilter == "alle") {
-			console.log("klon");
+        if (event.acf.eventtype == eventTypeFilter || eventTypeFilter == "alle") {
+            console.log("klon");
 
 
-			let klon = postTemplate.cloneNode(true).content;
-			klon.querySelector("[data-title]").textContent = event.title.rendered;
-			klon.querySelector("[data-img]").setAttribute("src", event.acf.billede);
-			klon.querySelector("[data-text]").innerHTML = event.content.rendered;
-			klon.querySelector("[data-tid]").textContent = "Tidspunkt: " + event.acf.dato + " " + "kl " + event.acf.tid;
-			klon.querySelector("[data-sted]").textContent = "Sted: " + event.acf.sted;
-			klon.querySelector("[data-genre]").textContent = "Genre: " + " " + event.acf.genre;
-			klon.querySelector("[data-pris]").textContent = "Pris: " + event.acf.pris + " " + "kr ";
-			postContainer.appendChild(klon);
-		}
-	})
+            let klon = postTemplate.cloneNode(true).content;
+            klon.querySelector("[data-title]").textContent = event.title.rendered;
+            klon.querySelector("[data-img]").setAttribute("src", event.acf.billede);
+            klon.querySelector("[data-text]").innerHTML = event.content.rendered;
+            klon.querySelector("[data-tid]").textContent = event.acf.dato + " " + "kl " + event.acf.tid;
+            klon.querySelector("[data-sted]").textContent = "Sted: " + event.acf.sted;
+            klon.querySelector("[data-genre]").textContent = "Genre: " + " " + event.acf.genre;
+            klon.querySelector("[data-pris]").textContent = "Pris: " + event.acf.pris + " " + "kr ";
+            postContainer.appendChild(klon);
+        }
+    })
 
 }
 
 
 
 function openNav() {
-	document.getElementById("sideNavigation").style.width = "40vw";
+    document.getElementById("sideNavigation").style.width = "40vw";
 
-	console.log("Åben Menu");
+    console.log("Åben Menu");
 
 }
 
 function closeNav() {
-	document.getElementById("sideNavigation").style.width = "0";
+    document.getElementById("sideNavigation").style.width = "0";
 
-	document.getElementById("main").style.marginLeft = "0";
-	console.log("Luk Menu")
+    document.getElementById("main").style.marginLeft = "0";
+    console.log("Luk Menu")
 }
 
 document.querySelector("#modal_vindue").addEventListener("click", lukModal);
 
 function visModal() {
-	document.getElementById("modal_vindue").style.opacity = "1";
-	document.getElementById("modal_vindue").style.pointerEvents = "auto";
-	console.log("Vis Modal");
+    document.getElementById("modal_vindue").style.opacity = "1";
+    document.getElementById("modal_vindue").style.pointerEvents = "auto";
+    console.log("Vis Modal");
 }
 
 function lukModal() {
-	document.getElementById("modal_vindue").style.opacity = "0";
-	document.getElementById("modal_vindue").style.pointerEvents = "none";
-	console.log("luk Modal");
+    document.getElementById("modal_vindue").style.opacity = "0";
+    document.getElementById("modal_vindue").style.pointerEvents = "none";
+    console.log("luk Modal");
 }
 
 function visForm() {
-	document.getElementById("nyhedsbrevForm").classList.toggle("toggleNyhedsbrev1");
-	document.getElementById("nyhedsbrevForm").classList.toggle("toggleNyhedsbrev2");
+    document.getElementById("nyhedsbrevForm").classList.toggle("toggleNyhedsbrev1");
+    document.getElementById("nyhedsbrevForm").classList.toggle("toggleNyhedsbrev2");
 
-	document.getElementById("nyhedsTxt").classList.toggle("toggleShow");
-	document.getElementById("nyhedsArea").classList.toggle("toggleShow");
-	document.getElementById("nyhedsSubmit").classList.toggle("toggleShow");
+    document.getElementById("nyhedsTxt").classList.toggle("toggleShow");
+    document.getElementById("nyhedsArea").classList.toggle("toggleShow");
+    document.getElementById("nyhedsSubmit").classList.toggle("toggleShow");
 
 
 }
