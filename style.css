@@ -125,39 +125,68 @@ article {
 
 #footer {
     width: 96.5vw;
+    margin-top: 3vw;
     border-style: solid;
-    border-color: black;
-    height: 20vw;
+    border-color: rgba(0, 0, 0, 0);
+    height: 30vw;
     bottom: 0vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-#footer li {
+#footer p {
     list-style: none;
+    font-family: 'nunito', sans-serif;
 }
+
+
+#footer b {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
 
 #footerTxt {
     background-color: #fce5f1;
     margin: 0;
-    height: 20vw;
+    height: 30vw;
 }
+
+#footer .text1 {
+    background-color: #fce5f1;
+    margin: 0;
+    height: 10vw;
+    line-height: 1.6;
+    font-size: 12px;
+    display: flex;
+}
+
+#footer .text2 {
+    background-color: #fce5f1;
+    margin: 0;
+    height: 10vw;
+    line-height: 7px;
+    font-size: 12px;
+    display: flex;
+}
+
 
 #footerLogo {
     margin: 0;
-    height: 20vw;
+    height: 15vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .footerLogo_logo {
     height: 9vw;
     margin: auto;
+    position: relative;
 }
 
 .sponsor {
-    height: 9vw;
+    height: 10vw;
+    margin: 10px;
     object-fit: cover;
 
 }
@@ -623,41 +652,74 @@ a svg {
     }
 
     #footer {
-        width: 98.8vw;
+        width: 96.5vw;
+        margin-top: 4vw;
         border-style: solid;
-        border-color: black;
-        height: 10vw;
+        border-color: rgba(0, 0, 0, 0);
+        height: 20vw;
         bottom: 0vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
-    #footer li {
+    #footer p {
         list-style: none;
+        font-family: 'nunito', sans-serif;
     }
+
+
+    #footer b {
+        font-family: sans-serif;
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
 
     #footerTxt {
         background-color: #fce5f1;
         margin: 0;
-        height: 10vw;
+        height: 12vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+
+    #footer .text1 {
+        background-color: #fce5f1;
+        margin: 0;
+        height: 10vw;
+        line-height: 1.3;
+        font-size: 12px;
+    }
+
+    #footer .text2 {
+        background-color: #fce5f1;
+        margin: 0;
+        height: 10vw;
+        /*        line-height: 7px;*/
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     #footerLogo {
         margin: 0;
-        height: 10vw;
+        height: 5vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
     }
 
     .footerLogo_logo {
-        height: 4vw;
-        margin: 1vw 0 0 2vw;
-
+        height: 9vw;
+        margin: auto;
+        position: relative;
     }
 
     .sponsor {
-        height: 8vw;
+        height: 6vw;
+        margin: 1px;
+        object-fit: cover;
+
     }
 
     .sidenav a {
