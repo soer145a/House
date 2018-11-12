@@ -19,11 +19,12 @@ article {
 }
 
 #banner_img {
-    width: 100%;
+    width: 110%;
     height: 35vw;
     object-fit: cover;
     position: absolute;
     z-index: 0;
+
 }
 
 #logo_frontsite {
@@ -701,17 +702,18 @@ a svg {
         top: .3vw;
         font-weight: bold;
 
+
     }
 
     .navi a {
 
 
-        color: white;
+        color: black;
         font-family: 'Nunito', sans-serif;
         text-decoration: none;
         padding: 1vw;
         position: relative;
-        transition: 0.4s ease;
+        transition: .6s ease;
 
     }
 
@@ -720,21 +722,24 @@ a svg {
         content: "";
         position: absolute;
         height: 2px;
-        background-color: #fce5f1;
+        background-color: #d3072a;
         width: 0;
         left: 50%;
         bottom: 0.6vw;
         transform: translateX(-50%);
         transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
 
+
     }
 
     .navi a:hover {
 
-        color: #fce5f1;
+        color: #d3072a;
         font-family: 'Nunito', sans-serif;
         padding: 1vw;
         width: 80%;
+        font-weight: bold;
+
     }
 
     .navi a:hover:after {
@@ -750,8 +755,8 @@ svg {
     position: relative;
     top: 25vw;
     width: 90vw;
-    margin: auto;
-    padding: auto;
+    padding-top: 8vw;
+    left: 10%
 }
 
 g #ind:hover {
@@ -783,4 +788,95 @@ g tspan:hover {
     font-weight: bold;
     fill: #D3072A;
     cursor: pointer;
+}
+
+
+/* -------- SIDERNE ------------ */
+
+.container_body h2 {
+
+    font-family: 'nunito', sans-serif;
+    font-size: 2em;
+    color: #D3072A;
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.container_body h3 {
+
+    font-family: 'nunito', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.5vw;
+    margin-top: 2vw;
+
+}
+
+.container_body p {
+
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.6vw;
+}
+
+.container_body {
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 30vw;
+
+}
+
+.container_body a {
+
+
+    color: #24195d;
+    font-family: sans-serif;
+    font-size: 1em;
+    position: relative;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.container_body a:hover {
+
+    color: #24195d;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.container_body a:hover:after {
+    width: 90%;
+}
+
+.container_body a:after {
+    content: "";
+    position: absolute;
+    font-weight: bold;
+    height: 2px;
+    background-color: #D3072A;
+    width: 0;
+    left: 50%;
+    bottom: -.4vw;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
+
+}
+
+.container_body li {
+
+
+    text-decoration-color: #D3072A;
+    color: #24195d;
+    font-family: sans-serif;
+    font-size: 1em;
+    list-style: none;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+iframe {
+
+    padding-bottom: 2vw;
+    padding-top: 2vw;
 }

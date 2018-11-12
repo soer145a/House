@@ -77,3 +77,9 @@
     line-height: 1.6em;
     font-weight: bold;
 }
+
+iframe {
+
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
