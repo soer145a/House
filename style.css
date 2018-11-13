@@ -5,13 +5,11 @@ body {
 }
 
 p {
-
-    font-family: sans-serif;
+    font-family: 'nunito', sans-serif;
 }
 
 article {
     position: relative;
-
 }
 
 #indholdsArea {
@@ -37,29 +35,26 @@ article {
 }
 
 #sort_button {
-    width: 40vw;
+    width: 45vw;
     height: 10vw;
     z-index: 3;
     left: 30%;
-    top: 28vw;
+    top: 30vw;
     position: absolute;
     background-color: black;
     border-radius: 10vw;
     transition: .1s ease;
-
-
 }
 
 #sort_button p {
-    margin: 1.7vw 0 0 7.5vw;
+    margin: 1.6vw 0 0 7.5vw;
     padding: 0;
     width: 40vw;
-    font-size: 1.8em;
+    font-size: 1.3em;
     color: white;
-    font-family: 'nunito';
+    font-family: 'nunito', sans-serif;
     font-weight: bold;
 }
-
 
 #sort_button a {
     text-decoration: none;
@@ -89,7 +84,7 @@ article {
 }
 
 #menuVindue {
-    background-color: rgb(157, 157, 157);
+    background-color: lightgray;
     position: absolute;
     width: 80vw;
     height: 120vw;
@@ -100,6 +95,7 @@ article {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     z-index: 11;
+    opacity: 0.9;
 }
 
 
@@ -111,17 +107,20 @@ article {
 
 .modal_knap p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     z-index: 20;
     color: white;
     font-family: 'nunito', sans-serif;
-
+    text-align: center;
+    padding-top: 24vw;
 }
 
-.modal_knap {
-    height: 40vw;
+img.sort_item {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    padding-left: 5vw;
 }
-
 
 #footer {
     width: 96.5vw;
@@ -199,7 +198,7 @@ article {
 }
 
 .pil_img {
-    width: 3vw;
+    width: 6vw;
 }
 
 .pilHoejre {
@@ -303,9 +302,10 @@ article {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #D3072A;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    font-family: 'nunito', sans-serif;
 }
 
 .sidenav a:hover,
@@ -628,17 +628,17 @@ a svg {
     .modal_knap p {
         font-family: 'nunito', sans-serif;
         text-align: left;
-        padding-left: 200px;
-        padding-top: 34px;
-        padding-bottom: 16px;
+        padding-left: 250px;
+        padding-top: 22px;
+        font-size: 2.3em;
     }
 
     .modal_knap {}
 
     img.sort_item {
         position: absolute;
-        height: 12vw;
-        padding-top: 1vw;
+        height: 13vw;
+        width: 13vw;
     }
 
     #modal_vindue {
