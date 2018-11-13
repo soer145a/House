@@ -85,13 +85,13 @@ function visPosts() {
                 console.log("klik på Event")
             })
 
-            klon.querySelector("[data-title]").textContent = event.title.rendered;
+            klon.querySelector("[data-title]").textContent = event.title.rendered + " " + " ";
             klon.querySelector("[data-img]").setAttribute("src", event.acf.billede);
             klon.querySelector("[data-text]").innerHTML = event.content.rendered;
             klon.querySelector("[data-tid]").textContent = event.acf.dato + " " + "kl " + event.acf.tid;
             klon.querySelector("[data-sted]").textContent = "Sted: " + event.acf.sted;
             klon.querySelector("[data-genre]").textContent = "Genre: " + " " + event.acf.genre;
-            klon.querySelector("[data-pris]").textContent = "Pris: " + event.acf.pris;
+            klon.querySelector("[data-pris]").textContent = event.acf.pris;
             postContainer.appendChild(klon);
         }
 
