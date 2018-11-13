@@ -32,7 +32,10 @@ article {
     top: 1vw;
     left: 1vw;
     z-index: 2;
+    transition: .5s ease;
 }
+
+
 
 #sort_button {
     width: 45vw;
@@ -254,11 +257,9 @@ body {
     z-index: -1;
     margin: 0;
     padding: 0;
-
+    padding: 0;
 
 }
-
-
 
 #template_desc {
     display: none;
@@ -570,6 +571,7 @@ g tspan:hover {
     margin-right: 9.8vw;
     margin-top: 40vw;
     margin-top: 2vw;
+    margin-top: 2vw;
 
 }
 
@@ -617,6 +619,7 @@ g tspan:hover {
     bottom: -.4vw;
     transform: translateX(-50%);
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
+
 }
 
 .container_body li {
@@ -638,7 +641,41 @@ iframe {
 #singleblock {
     transform: scale(2);
     margin-left: 50vw;
-    margin-bottom:
+    margin-top: 25vw;
+    margin-bottom: 10vw;
+
+}
+
+#singleblock #template_tittel:hover {
+
+    font-size: 1.5em;
+    width: 100%;
+    opacity: 0;
+    height: 11.9vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: 'nunito', sans-serif;
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
+}
+
+#singleblock #template_tittel {
+
+    font-size: 1.5em;
+    width: 100%;
+    height: 11.9vw;
+    opacity: 1;
+    position: absolute;
+    left: 0vw;
+    top: -19.2vw;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: 'nunito', sans-serif;
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
 }
 
 iframe {
@@ -649,6 +686,17 @@ iframe {
 /*-------------------------------------------*/
 
 @media screen and (min-width: 1000px) {
+
+    #logo_frontsite:hover {
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+        z-index: 2;
+        transform: rotate(90deg);
+
+    }
 
 
     #sideNavigation {
@@ -704,11 +752,38 @@ iframe {
 
     #template_tittel {
 
-        font-size: 1.5em;
+
+        font-size: 2em;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        left: 0vw;
+        top: -8.1vw;
+        background-color: black;
+        opacity: 0;
         font-family: 'nunito', sans-serif;
         position: absolute;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 1);
         text-align: center;
+        transition: .3s ease;
+
+    }
+
+    #template_tittel:hover {
+
+        font-size: 1.6em;
+        width: 100%;
+        opacity: 1;
+        height: 8.1vw;
+        position: absolute;
+        left: 0vw;
+        top: -8.1vw;
+        background-color: rgba(0, 0, 0, .7);
+        font-family: 'nunito', sans-serif;
+        position: absolute;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        cursor: pointer;
 
     }
 
@@ -721,18 +796,50 @@ iframe {
     #template_tid {
         font-size: .8vw;
         top: 1.2vw;
-        left: vw
+
     }
 
     #template_pris {
         font-size: .8vw;
         top: 1vw;
+        color: red;
+        text-decoration-color: black;
+    }
+
+    #template_pris:after {
+
+        content: "___";
+        position: absolute;
+        height: 1px;
+        width: 1;
+        left: .1vw;
+        ;
+        transition: 0.5s cubic-bezier(0.68, -0.4, 0.265, 1) all;
+
+    }
+
+    #prisfarve {
+
+        font-family: sans-serif;
+        font-size: .8vw;
+        top: 1vw;
+        font-weight: bold;
+        left: 14.3vw;
+        position: absolute;
     }
 
     #template_sted {
         font-size: .8vw;
         top: 2vw;
         left: 1vw;
+    }
+
+    #template_beskrivelse {
+
+        width: 20vw;
+        height: 10vw;
+        font-family: 'nunito', sans-serif;
+        font-size: 1em;
     }
 
     #sort_button p {
@@ -792,7 +899,7 @@ iframe {
 
     input[type=submit] {
 
-        color: #d3072a;
+        color: black;
         cursor: pointer;
 
     }
@@ -824,7 +931,7 @@ iframe {
     }
 
     #footer {
-        width: 96.5vw;
+        width: 100vw;
         margin-top: 4vw;
         border-style: solid;
         border-color: rgba(0, 0, 0, 0);
@@ -876,15 +983,17 @@ iframe {
 
     #footerLogo {
         margin: 0;
-        height: 5vw;
+        height: 10vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .footerLogo_logo {
         height: 9vw;
         margin: auto;
         position: relative;
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .sponsor {
@@ -1077,5 +1186,4 @@ iframe {
         margin-bottom:
     }
 
-    ======= > > > > > > > origin/master
 }
