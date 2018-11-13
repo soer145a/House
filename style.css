@@ -946,7 +946,7 @@ iframe {
     }
 
     #footer {
-        width: 96.5vw;
+        width: 100vw;
         margin-top: 4vw;
         border-style: solid;
         border-color: rgba(0, 0, 0, 0);
@@ -998,15 +998,17 @@ iframe {
 
     #footerLogo {
         margin: 0;
-        height: 5vw;
+        height: 10vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .footerLogo_logo {
         height: 9vw;
         margin: auto;
         position: relative;
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .sponsor {
