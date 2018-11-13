@@ -437,7 +437,6 @@ a svg {
     position: fixed;
     bottom: 22vw;
     right: 2vw;
-
     cursor: pointer;
 
 }
@@ -464,6 +463,8 @@ a svg {
     opacity: 0;
     transition: 1s;
     margin: 2vw 0 0 4vw;
+    color: #fce5f1;
+
 
 }
 
@@ -740,11 +741,12 @@ iframe {
 
         font-family: sans-serif;
 
+
     }
 
     #sort_button {
         height: 4vw;
-        width: 11vw;
+        width: 13vw;
         top: 23vw;
         margin: 0 0vw 0 17.5vw;
 
@@ -849,23 +851,43 @@ iframe {
     }
 
     #banner_img {
-        height: 25vw
+        height: 25vw;
     }
 
     #nyhedsbrev {
-        bottom: 2vw;
-        width: 5vw;
+        bottom: 4vw;
+        width: 7vw;
         height: 5vw;
+        z-index: 99;
     }
 
     #nyhedsbrevForm {
         bottom: 2vw;
-        width: 5vw;
-        height: 5vw;
+        width: 7vw;
+        background-color: #D3072A;
+        right: 2vw;
+        height: 7vw;
+        z-index: 100;
     }
 
     #nyhedsbrevImg {
-        width: 5vw;
+        width: 7vw;
+        z-index: 101;
+        position: fixed;
+        height: 7vw;
+    }
+
+    #nyhedsSubmit {
+
+        background-color: white;
+        border-color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-weight: bold;
+        font-family: 'nunito', sans-serif;
+        color: darkslategrey;
+
+
     }
 
     .toggleNyhedsbrev1 {
@@ -876,13 +898,15 @@ iframe {
 
     .toggleNyhedsbrev2 {
         opacity: 1;
-        width: 5vw;
+        width: 7vw;
+        right: 1.7vw;
     }
 
     #nyhedsTxt {
         opacity: 0;
         transition: 1s;
         margin: 1vw 0 0 2vw;
+        cursor: default;
     }
 
     #nyhedsArea {
@@ -934,7 +958,6 @@ iframe {
         width: 100vw;
         margin-top: 4vw;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0);
         height: 20vw;
         bottom: 0vw;
     }
@@ -954,9 +977,9 @@ iframe {
 
 
     #footerTxt {
-        background-color: #fce5f1;
+        background-color: #b3b3b3;
         margin: 0;
-        height: 12vw;
+        height: 10vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -973,7 +996,6 @@ iframe {
         background-color: #fce5f1;
         margin: 0;
         height: 10vw;
-        /*        line-height: 7px;*/
         font-size: 12px;
         display: flex;
         align-items: center;
@@ -986,14 +1008,14 @@ iframe {
         height: 10vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: rgba(0, 0, 0, .2);
+        background-color: #b3b3b3;
     }
 
     .footerLogo_logo {
         height: 9vw;
         margin: auto;
         position: relative;
-        background-color: rgba(0, 0, 0, .2);
+        background-color: #b3b3b3;
     }
 
     .sponsor {
