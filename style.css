@@ -111,9 +111,14 @@ article {
     z-index: 20;
     color: white;
     font-family: 'nunito', sans-serif;
+<<<<<<< HEAD
     <<<<<<< HEAD text-align: center;
     padding-top: 24vw;
     ======= > > > > > > > origin/master
+=======
+
+
+>>>>>>> origin/master
 }
 
 img.sort_item {
@@ -541,18 +546,31 @@ g tspan:hover {
 /* -------- SIDERNE ------------ */
 
 .container_body h2 {
+<<<<<<< HEAD
     font-family: 'nunito', sans-serif;
     font-size: 2em;
     color: #D3072A;
     margin-top: 7vw;
+=======
+
+    font-family: 'nunito', sans-serif;
+    font-size: 2em;
+    color: #D3072A;
+    margin-top: 3vw;
+>>>>>>> origin/master
     margin-bottom: 1.5vw;
 }
 
 .container_body h3 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     font-family: 'nunito', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 1.5vw;
+<<<<<<< HEAD
     margin-top: 3vw;
 }
 
@@ -566,10 +584,33 @@ g tspan:hover {
     margin-left: 9.8vw;
     margin-right: 9.8vw;
     margin-top: 40vw;
+=======
+    margin-top: 2vw;
+
+}
+
+.container_body p {
+
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.6vw;
+}
+
+.container_body {
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 30vw;
+>>>>>>> origin/master
 
 }
 
 .container_body a {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
     color: #24195d;
     font-family: sans-serif;
     font-size: 1em;
@@ -580,6 +621,10 @@ g tspan:hover {
 }
 
 .container_body a:hover {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     color: #24195d;
     font-family: sans-serif;
     width: 100%;
@@ -601,33 +646,57 @@ g tspan:hover {
     bottom: -.4vw;
     transform: translateX(-50%);
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
+<<<<<<< HEAD
 }
 
 .container_body li {
+=======
+
+}
+
+.container_body li {
+
+
+>>>>>>> origin/master
     text-decoration-color: #D3072A;
     color: #24195d;
     font-family: sans-serif;
     font-size: 1em;
+<<<<<<< HEAD
     list-style-type: circle;
+=======
+    list-style: none;
+>>>>>>> origin/master
     line-height: 1.6em;
     font-weight: bold;
 }
 
 iframe {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     padding-bottom: 2vw;
     padding-top: 2vw;
 }
 
 #singleblock {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     transform: scale(2);
     margin-left: 50vw;
     margin-bottom:
 }
 
+<<<<<<< HEAD
 iframe {
     width: 100%;
 }
 
+=======
+>>>>>>> origin/master
 /*-------------------------------------------*/
 
 @media screen and (min-width: 1000px) {
@@ -969,6 +1038,7 @@ iframe {
         width: 50%;
     }
 
+<<<<<<< HEAD
     .container_body h2 {
 
         font-family: 'nunito', sans-serif;
@@ -1066,4 +1136,6 @@ iframe {
         margin-bottom:
     }
 
+=======
+>>>>>>> origin/master
 }
