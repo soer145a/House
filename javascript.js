@@ -85,7 +85,8 @@ function visPosts() {
                 console.log("klik på Event")
             })
 
-            klon.querySelector("[data-title]").textContent = event.title.rendered + " " + " ";
+            klon.querySelector("[data-title]").textContent = event.title.rendered;
+            klon.querySelector("[data-title-to]").textContent = event.acf.titelKopi;
             klon.querySelector("[data-img]").setAttribute("src", event.acf.billede);
             klon.querySelector("[data-text]").innerHTML = event.content.rendered;
             klon.querySelector("[data-tid]").textContent = event.acf.dato + " " + "kl " + event.acf.tid;

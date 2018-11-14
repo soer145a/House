@@ -736,21 +736,30 @@ iframe {
 
     }
 
+    #template_tittel_2 {
+
+        font-size: .95vw;
+        position: absolute;
+        top: -1vw;
+        left: 1vw;
+        color: rgba(0, 0, 0, .8);
+    }
+
     #template_genre {
         font-size: .8vw;
-        top: 1vw;
+        top: 2vw;
         display: block;
     }
 
     #template_tid {
         font-size: .8vw;
-        top: 1.2vw;
+        top: 2vw;
 
     }
 
     #template_pris {
         font-size: .8vw;
-        top: 1vw;
+        top: 1.9vw;
         color: red;
         text-decoration-color: black;
     }
@@ -771,7 +780,7 @@ iframe {
 
         font-family: sans-serif;
         font-size: .8vw;
-        top: 1vw;
+        top: 2vw;
         font-weight: bold;
         left: 14.3vw;
         position: absolute;
@@ -779,7 +788,7 @@ iframe {
 
     #template_sted {
         font-size: .8vw;
-        top: 2vw;
+        top: 2.7vw;
         left: 1vw;
     }
 
@@ -822,6 +831,27 @@ iframe {
         z-index: 101;
         position: fixed;
         height: 7vw;
+        animation-name: puls;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes puls {
+
+        0% {
+
+            transform: scale(1);
+        }
+
+        50% {
+
+            transform: scale(1.1);
+        }
+
+        100% {
+
+            transform: scale(1);
+        }
     }
 
     #nyhedsSubmit {
@@ -841,7 +871,9 @@ iframe {
         opacity: 1;
         width: 28vw !important;
         transition: 0.3s;
+
     }
+
 
     .toggleNyhedsbrev2 {
         opacity: 1;
