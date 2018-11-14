@@ -224,12 +224,12 @@ body {
 
 #template_container {
     position: absolute;
-    bottom: 1vw;
+    bottom: 0vw;
     background-color: rgba(255, 255, 255, .54);
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 15vw;
+    width: 97vw;
+    height: 10vw;
 
 }
 
@@ -237,24 +237,23 @@ body {
 
     font-family: 'nunito', sans-serif;
     font-weight: bold;
-    font-size: 0.9em;
 }
 
 #template_container #template_pris p {
+
     color: red;
 }
 
 #template_tittel {
     position: absolute;
-    bottom: 9vw;
+    bottom: 5vw;
     margin: 0;
     left: 1vw;
-    font-family: 'nunito', sans-serif;
-    font-size: 1.1em;
+
 }
 
 #template_img {
-    width: 100%;
+    width: 97vw;
     z-index: -1;
     margin: 0;
     padding: 0;
@@ -269,39 +268,32 @@ body {
 #template_tid {
     position: absolute;
     right: 1vw;
-    bottom: 0.1vw;
+    bottom: 4vw;
 }
 
 #template_sted {
     position: absolute;
-    left: 1vw;
-    bottom: 4vw;
+    right: 1vw;
+    bottom: 0;
     margin: 0;
+
 }
 
 #template_genre {
     position: absolute;
     left: 1vw;
-    bottom: 0.5vw;
+    bottom: 2vw;
     margin: 0;
 }
 
 #template_pris {
     position: absolute;
     right: 1vw;
-    bottom: 0vw;
+    bottom: 3.5vw;
     margin: 0;
 
 }
 
-#prisfarve {
-    font-family: 'nunito', sans-serif;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0vw;
-    right: 14vw;
-    font-size: 0.9em;
-}
 
 .sidenav {
 
@@ -643,8 +635,6 @@ iframe {
 
 @media screen and (min-width: 1000px) {
 
-
-
     #logo_frontsite:hover {
         width: 10vw;
         height: 10vw;
@@ -688,32 +678,24 @@ iframe {
 
     #template_container {
         width: 20vw;
-        height: 4.5vw;
+        height: 4vw;
         z-index: 90;
         position: absolute;
         z-index: 4;
-        bottom: 0;
     }
 
     #template_container p {
 
         font-family: sans-serif;
-        font-size: .75em;
-    }
 
-    #template_tittel_2 {
 
-        top: -.69vw;
-        left: 1vw;
-        position: absolute;
-        color: rgba(0, 0, 0, .7);
     }
 
     #sort_button {
         height: 4vw;
-        width: 15vw;
+        width: 13vw;
         top: 23vw;
-        margin: 0 0 0 17.5vw;
+        margin: 0 0vw 0 17.5vw;
 
     }
 
@@ -725,7 +707,7 @@ iframe {
         height: 40%;
         position: absolute;
         left: 0vw;
-        top: -7.6vw;
+        top: -8.1vw;
         background-color: black;
         opacity: 0;
         font-family: 'nunito', sans-serif;
@@ -741,10 +723,10 @@ iframe {
         font-size: 1.6em;
         width: 100%;
         opacity: 1;
-        height: 7.6vw;
+        height: 8.1vw;
         position: absolute;
         left: 0vw;
-        top: -7.6vw;
+        top: -8.1vw;
         background-color: rgba(0, 0, 0, .7);
         font-family: 'nunito', sans-serif;
         position: absolute;
@@ -754,21 +736,30 @@ iframe {
 
     }
 
+    #template_tittel_2 {
 
+        font-size: .95vw;
+        position: absolute;
+        top: -1vw;
+        left: 1vw;
+        color: rgba(0, 0, 0, .8);
+    }
 
     #template_genre {
-        top: 2.2vw;
+        font-size: .8vw;
+        top: 2vw;
         display: block;
     }
 
     #template_tid {
-        top: 2.1vw;
+        font-size: .8vw;
+        top: 2vw;
 
     }
 
     #template_pris {
         font-size: .8vw;
-        top: 2.1vw;
+        top: 1.9vw;
         color: red;
         text-decoration-color: black;
     }
@@ -788,16 +779,16 @@ iframe {
     #prisfarve {
 
         font-family: sans-serif;
-        font-size: .8em;
-        top: 2.1vw;
+        font-size: .8vw;
+        top: 2vw;
         font-weight: bold;
-        left: 14vw;
+        left: 14.3vw;
         position: absolute;
     }
 
     #template_sted {
-        font-size: .4em;
-        top: 2.9vw;
+        font-size: .8vw;
+        top: 2.7vw;
         left: 1vw;
     }
 
@@ -806,9 +797,8 @@ iframe {
         width: 20vw;
         height: 10vw;
         font-family: 'nunito', sans-serif;
-        font-size: .8vw;
+        font-size: 1em;
     }
-
 
     #sort_button p {
         margin: 1vw 0 0 1.7vw;
@@ -1200,6 +1190,14 @@ iframe {
     }
 
 
+    #singleblock # {
+
+        transform: scale(2);
+        margin-left: 50vw;
+        margin-top: 25vw;
+        margin-bottom: 10vw;
+
+    }
 
     #singleblock #template_tittel:hover {
 
