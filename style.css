@@ -622,7 +622,8 @@ iframe {
 #singleblock {
     transform: scale(2);
     margin-left: 50vw;
-    margin-bottom:
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
 
 iframe {
@@ -761,7 +762,7 @@ iframe {
         height: 1px;
         width: 1;
         left: .1vw;
-        ;
+
         transition: 0.5s cubic-bezier(0.68, -0.4, 0.265, 1) all;
 
     }
@@ -838,7 +839,7 @@ iframe {
 
     .toggleNyhedsbrev1 {
         opacity: 1;
-        width: 25vw !important;
+        width: 28vw !important;
         transition: 0.3s;
     }
 
@@ -1151,7 +1152,51 @@ iframe {
 
         transform: scale(2);
         margin-left: 50vw;
-        margin-bottom:
+        margin-top: 25vw;
+        margin-bottom: 10vw;
+
+    }
+
+
+    #singleblock # {
+
+        transform: scale(2);
+        margin-left: 50vw;
+        margin-top: 25vw;
+        margin-bottom: 10vw;
+
+    }
+
+    #singleblock #template_tittel:hover {
+
+        font-size: 1.5em;
+        width: 100%;
+        opacity: 0;
+        height: 11.9vw;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .7);
+        font-family: 'nunito', sans-serif;
+        position: absolute;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+
+    }
+
+    #singleblock #template_tittel {
+
+        font-size: 1.5em;
+        width: 100%;
+        height: 11.9vw;
+        opacity: 1;
+        position: absolute;
+        left: 0vw;
+        top: -19.2vw;
+        background-color: rgba(0, 0, 0, .7);
+        font-family: 'nunito', sans-serif;
+        position: absolute;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+
     }
 
 }
