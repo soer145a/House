@@ -915,8 +915,6 @@ iframe {
         font-size: 2.3em;
     }
 
-    .modal_knap {}
-
     img.sort_item {
         position: absolute;
         height: 13vw;
@@ -1189,16 +1187,15 @@ iframe {
         padding-top: 2vw;
     }
 
+    /* --------- SINGLE VIEW --------*/
+
     #singleblock {
 
         transform: scale(2);
-        margin-left: 50vw;
+        margin-left: 53vw;
         margin-top: 25vw;
         margin-bottom: 10vw;
-
     }
-
-
 
     #singleblock #template_tittel:hover {
 
@@ -1209,7 +1206,6 @@ iframe {
         position: absolute;
         background-color: rgba(0, 0, 0, .7);
         font-family: 'nunito', sans-serif;
-        position: absolute;
         color: rgba(255, 255, 255, 1);
         text-align: center;
 
@@ -1223,7 +1219,7 @@ iframe {
         opacity: 1;
         position: absolute;
         left: 0vw;
-        top: -19.2vw;
+        top: -18.3vw;
         background-color: rgba(0, 0, 0, .7);
         font-family: 'nunito', sans-serif;
         position: absolute;
@@ -1232,4 +1228,38 @@ iframe {
 
     }
 
+    #singleblock #template_beskrivelse {
+        width: 20vw;
+        height: 10vw;
+        font-family: 'nunito', sans-serif;
+        font-size: 0.46em;
+    }
+
+    #singleblock #template_genre {
+        font-family: 'nunito', sans-serif;
+        left: 0vw;
+        top: 1vw;
+        font-size: 0.7em;
+    }
+
+    #singleblock #template_sted {
+        font-family: 'nunito', sans-serif;
+        left: 0vw;
+        top: 2vw;
+        font-size: 0.7em;
+    }
+
+    #singleblock #template_pris {
+        font-family: 'nunito', sans-serif;
+        right: 0vw;
+        top: 1vw;
+        font-size: 0.7em;
+    }
+
+    #singleblock #template_tid {
+        font-family: 'nunito', sans-serif;
+        right: 0vw;
+        top: 1.1vw;
+        font-size: 0.7em;
+    }
 }
