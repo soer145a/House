@@ -31,7 +31,7 @@
         <polygon id="plade-salonk" fill="#0F1548" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" points="117.5,505.5
 		318.5,391.5 474.5,391.5 399.5,445.5 572.5,448.5 504.5,505.5 	" />
 
-        <a href="http://www.salon-k.dk/"> <text id="tekst-salonk" transform="matrix(1 0 0 1 231.1998 477.5)" fill="#EFDAE1" font-family="Nunito" font-size="16px">SALONK</text> </a>
+        <a href="udlejning.html#salonk"> <text id="tekst-salonk" transform="matrix(1 0 0 1 231.1998 477.5)" fill="#EFDAE1" font-family="Nunito" font-size="16px">SALONK</text> </a>
         <g id="SalonK">
             <rect x="117.5" y="505.5" fill="#D3EBF1" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" width="387.5" height="8" />
             <polygon fill="#D3EBF1" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" points="504.5,513.5 571.5,455.5
@@ -101,7 +101,7 @@
         </text>
 
         <text id="plade-star_1_" transform="matrix(1 0 0 1 749.0902 372.0502)">
-            <a href="http://www.evoo.dk/">
+            <a href="udlejning.html#stardust">
                 <tspan x="0" y="10" fill="#EFDAE1" font-family="Nunito" font-size="16px">STARDUST</tspan>
             </a>
         </text>
@@ -135,7 +135,9 @@
     <g id="Biografen">
         <polygon id="plade-bio" fill="#0F1548" points="668.1,310.2 751,240.7 1104.6,241.9 1057,313.8 	" />
         <text id="tekst-bio" transform="matrix(1 0 0 1 748.7146 272.3502)">
-            <tspan x="0" y="0" fill="#EFDAE1" font-family="Nunito" font-size="16px">HUSETS BIOGRAF</tspan>
+            <a href="udlejning.html#husetsbiograf">
+                <tspan x="0" y="0" fill="#EFDAE1" font-family="Nunito" font-size="16px">HUSETS BIOGRAF</tspan>
+            </a>
             <tspan x="0" y="19.2" fill="#EFDAE1" font-family="Nunito" font-size="16px">VOX</tspan>
         </text>
         <g id="Biografen_1_">
@@ -156,7 +158,7 @@
     <g id="Musikcafeen">
         <polygon id="plade-musik" fill="#0F1548" points="668.7,217.2 751.6,147.7 1105.2,148.9 1057.6,220.8 	" />
 
-        <text id="tekst-musik" transform="matrix(1 0 0 1 758.8074 184.2498)" fill="#EFDAE1" font-family="Nunito" font-size="16px">MUSIKCAFEEN</text>
+        <a href="udlejning.html#musikcafeen"> <text id="tekst-musik" transform="matrix(1 0 0 1 758.8074 184.2498)" fill="#EFDAE1" font-family="Nunito" font-size="16px">MUSIKCAFEEN</text> </a>
         <g id="Musikcafeen_1_">
 
             <rect x="669.3" y="216.5" fill="#D3EBF1" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" width="387.8" height="9.8" />

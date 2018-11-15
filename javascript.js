@@ -7,6 +7,7 @@ let postContainer = document.querySelector(".container");
 let eventTypeFilter = "alle";
 let dest = document.querySelector(".data-container");
 
+
 async function getJSON() {
 
     let musicJson = await fetch("http://ceciliewig.com/kea/07-cms/huset_kbh/wordpress/wp-json/wp/v2/musikevents");
@@ -70,9 +71,19 @@ function filtrering() {
 
 
 function visPosts() {
+
+
     postContainer.innerHTML = "";
 
+
+    events.sort(function (a, b) {
+        return a.acf.dato - b.acf.dato;
+    });
+
+
     events.forEach(event => {
+
+
 
         if (event.acf.eventtype == eventTypeFilter || eventTypeFilter == "alle") {
             console.log(events);
@@ -93,11 +104,13 @@ function visPosts() {
             klon.querySelector("[data-sted]").textContent = "Sted: " + event.acf.sted;
             klon.querySelector("[data-genre]").textContent = "Genre: " + " " + event.acf.genre;
             klon.querySelector("[data-pris]").textContent = event.acf.pris;
+
             postContainer.appendChild(klon);
+
         }
 
 
-    })
+    });
 }
 
 
