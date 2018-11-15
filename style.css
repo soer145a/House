@@ -38,7 +38,7 @@ article {
 
 
 #sort_button {
-    width: 45vw;
+    width: 50vw;
     height: 10vw;
     z-index: 3;
     left: 30%;
@@ -50,10 +50,9 @@ article {
 }
 
 #sort_button p {
-    margin: 1.4vw 0 0 4vw;
-    padding: 0;
-    width: 40vw;
-    font-size: 1.3em;
+    text-align: center;
+    margin: 1.0vw 0 0 0vw;
+    font-size: 1.2em;
     color: white;
     font-family: 'nunito', sans-serif;
     font-weight: bold;
@@ -774,23 +773,13 @@ iframe {
         text-decoration-color: black;
     }
 
-    #template_pris:after {
 
-        content: "___";
-        position: absolute;
-        height: 1px;
-        width: 1;
-        left: .1vw;
-
-        transition: 0.5s cubic-bezier(0.68, -0.4, 0.265, 1) all;
-
-    }
 
     #prisfarve {
 
         font-family: sans-serif;
         font-size: .8em;
-        top: 2.3vw;
+        top: 2.2vw;
         font-weight: bold;
         left: 14vw;
         position: absolute;
@@ -812,7 +801,7 @@ iframe {
 
 
     #sort_button p {
-        margin: 1vw 0 0 1.7vw;
+        margin: 1vw 0 0 0;
         font-size: 1.3em;
         font-family: 'nunito', sans-serif;
     }
@@ -1014,6 +1003,15 @@ iframe {
         object-fit: cover;
 
     }
+
+    /* --------- NAV UDLEJNING --------*/
+
+    #udlejningnav a {
+
+        padding: 1.2vw;
+        font-weight: bold;
+    }
+
 
     .sidenav a {
         margin: 5vw 0 0 4vw;

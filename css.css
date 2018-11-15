@@ -1090,6 +1090,13 @@ iframe {
         width: 50%;
     }
 
+    /* --------- NAV UDLEJNING --------*/
+
+    #udlejningnav a {
+
+        padding: 2vw;
+    }
+
     .container_body h2 {
 
         font-family: 'nunito', sans-serif;
