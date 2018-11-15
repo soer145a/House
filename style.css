@@ -859,7 +859,7 @@ iframe {
 
         50% {
 
-            <<<<<<< HEAD
+            transform: scale(1.1);
         }
 
         .toggleNyhedsbrev1 {
@@ -1034,10 +1034,10 @@ iframe {
             top: 3vw;
             position: absolute;
             transform: scale(0.8);
-            =======transform: scale(1.1);
+
         }
 
-        > > > > > > > origin/master 100% {
+        100% {
 
             transform: scale(1);
         }
