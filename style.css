@@ -706,6 +706,7 @@ iframe {
         position: absolute;
         z-index: 4;
         bottom: 0;
+
     }
 
     #template_container p {
@@ -727,7 +728,7 @@ iframe {
         height: 4vw;
         width: 15vw;
         top: 23vw;
-        margin: 0 0 0 17.5vw;
+        left: 43.5vw;
 
     }
 
@@ -1147,7 +1148,6 @@ iframe {
     #footerTxt {
         background-color: #b3b3b3;
         margin: 0;
-        height: 10vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -1155,15 +1155,15 @@ iframe {
     #footer .text1 {
         background-color: #fce5f1;
         margin: 0;
-        height: 10vw;
-        line-height: 1.3;
+        height: 12vw;
+        line-height: 1.1;
         font-size: 12px;
     }
 
     #footer .text2 {
         background-color: #fce5f1;
         margin: 0;
-        height: 10vw;
+        height: 12vw;
         font-size: 12px;
         display: flex;
         align-items: center;
