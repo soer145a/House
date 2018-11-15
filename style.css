@@ -286,6 +286,11 @@ body {
     margin: 0;
 }
 
+#template_tittel_2 {
+
+    display: none;
+}
+
 #template_pris {
     position: absolute;
     right: 1vw;
@@ -447,12 +452,14 @@ a svg {
     border-radius: 10vw;
     z-index: 2;
 
+
 }
 
 #nyhedsbrevForm {
-    background-color: #fce5f1;
-    position: inherit;
 
+    background-color: #D3072A;
+    ;
+    position: inherit;
     height: 13vw;
     bottom: 22.7vw;
     z-index: -1;
@@ -489,7 +496,7 @@ a svg {
 
 .toggleNyhedsbrev2 {
     opacity: 1;
-    width: 16vw;
+    width: 13vw;
 }
 
 .toggleShow {
@@ -700,6 +707,7 @@ iframe {
         left: 1vw;
         position: absolute;
         color: rgba(0, 0, 0, .7);
+        display: block;
     }
 
     #sort_button {
