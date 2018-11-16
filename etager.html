@@ -12,31 +12,45 @@
 
 <body>
 
-    <img src="splash-02.png" alt="banner" id="banner_img">
-    <a href="index.html"><img src="logo_endeligt.png" alt="logo" id="logo_frontsite"></a>
+    <header>
+        <img src="splash-02.png" alt="banner" id="banner_img">
+        <a href="index.html"><img src="logo_endeligt.png" alt="logo" id="logo_frontsite"></a>
 
-    <div id="sideNavigation" class="sidenav">
-        <a href="#" onclick="closeNav()"> <img src="pil.png" alt="pil" class="pil_img pilHoejre"></a>
-        <a href="index.html">Forside</a>
-        <a href="etager.html">Huset</a>
-        <a href="udlejning.html">Udlejning</a>
-        <a href="om.html">Om</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="frivillig.html">Frivillig</a>
+        <div id="sideNavigation" class="sidenav">
+            <a href="#" onclick="closeNav()"> <img src="pil.png" alt="pil" class="pil_img pilHoejre"></a>
+            <a href="index.html">Forside</a>
+            <a href="etager.html">Huset</a>
+            <a href="udlejning.html">Udlejning</a>
+            <a href="om.html">Om</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="frivillig.html">Frivillig</a>
+
+        </div>
+        <nav class="topnav">
+            <a href="#" onclick="openNav()">
+                <img src="pil.png" alt="pil" class="pil_img" class="pilVenstre">
+            </a>
+        </nav>
+
+        <div id="navigation" class="navi">
+
+            <a href="index.html">Forside</a>
+            <a href="etager.html">Huset</a>
+            <a href="udlejning.html">Udlejning</a>
+            <a href="om.html">Om</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="frivillig.html">Frivillig</a>
+        </div>
+
+    </header>
+    <div class="container_body">
+        <h2>Velkommen til Huset</h2>
+
+        <p>Her er en oversigt over huset og dets etager. Klik dig ind på vores forskellige værelser, for at få yderligere information om dem.</p>
 
     </div>
-
-    <div id="navigation" class="navi">
-
-        <a href="index.html">Forside</a>
-        <a href="etager.html">Huset</a>
-        <a href="udlejning.html">Udlejning</a>
-        <a href="om.html">Om</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="frivillig.html">Frivillig</a>
-    </div>
-
     <div id="house"></div>
+
 
     <script type="text/javascript" src="svgtest.js"></script>
 
