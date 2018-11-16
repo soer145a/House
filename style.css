@@ -235,6 +235,13 @@ body {
 
 }
 
+
+}
+
+.sidenavEtagerne {
+	z-index: 100;
+}
+
 #template_container {
 	position: absolute;
 	bottom: 1vw;
@@ -325,7 +332,7 @@ body {
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 30;
+	z-index: 600000000;
 	top: 0;
 	right: 0;
 	background-color: lightgray;
@@ -522,10 +529,12 @@ a svg {
 svg {
 
 	position: relative;
-	top: 25vw;
+
 	width: 90vw;
 	padding-top: 8vw;
-	left: 10%
+	left: 10%;
+	display: block;
+
 }
 
 g #ind:hover {
@@ -588,6 +597,7 @@ g tspan:hover {
 	margin-left: 9.8vw;
 	margin-right: 9.8vw;
 	margin-top: 40vw;
+
 
 }
 
@@ -699,6 +709,7 @@ iframe {
 		width: 20vw;
 	}
 
+
 	#template_container {
 		width: 20vw;
 		height: 4.5vw;
@@ -707,6 +718,7 @@ iframe {
 		z-index: 4;
 		bottom: 0;
 	}
+
 
 	#template_container p {
 
@@ -723,12 +735,12 @@ iframe {
 		display: block;
 	}
 
+
 	#sort_button {
 		height: 4vw;
 		width: 15vw;
 		top: 23vw;
-		margin: 0 0 0 17.5vw;
-
+		left: 43.5vw;
 	}
 
 	#template_tittel {
@@ -807,7 +819,7 @@ iframe {
 
 	#template_beskrivelse {
 
-		width: 20vw;
+		<<<<<<< HEAD width: 20vw;
 		height: 10vw;
 		font-family: 'nunito', sans-serif;
 		font-size: .8vw;
@@ -1488,4 +1500,650 @@ iframe {
 	#buyButton:hover {
 		transform: scale(1.05);
 	}
+}
+
+=======width: 20vw;
+height: 10vw;
+font-family: 'nunito',
+sans-serif;
+font-size: .8vw;
+}
+
+
+#sort_button p {
+	margin: 1vw 0 0 0;
+	font-size: 1.3em;
+	font-family: 'nunito', sans-serif;
+}
+
+#banner_img {
+	height: 25vw;
+}
+
+#nyhedsbrev {
+	bottom: 4vw;
+	width: 7vw;
+	height: 5vw;
+	z-index: 99;
+}
+
+#nyhedsbrevForm {
+	bottom: 2vw;
+	width: 7vw;
+	background-color: #D3072A;
+	right: 2vw;
+	height: 7vw;
+	z-index: 100;
+}
+
+#nyhedsbrevImg {
+	width: 7vw;
+	z-index: 101;
+	position: fixed;
+	height: 7vw;
+	animation-name: puls;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes puls {
+
+	0% {
+
+		transform: scale(1);
+	}
+
+	50% {
+
+		transform: scale(1.1);
+	}
+
+	.toggleNyhedsbrev1 {
+		opacity: 1;
+		width: 28vw !important;
+		transition: 0.3s;
+
+	}
+
+
+	.toggleNyhedsbrev2 {
+		opacity: 1;
+		width: 7vw;
+		right: 1.7vw;
+	}
+
+	#nyhedsTxt {
+		opacity: 0;
+		transition: 1s;
+		margin: 1vw 0 0 2vw;
+		cursor: default;
+	}
+
+	#nyhedsArea {
+		opacity: 0;
+		transition: 0.2s;
+		margin: .5vw 0 0 2vw;
+
+	}
+
+	#nyhedsSubmit {
+		opacity: 0;
+
+	}
+
+	input[type=submit] {
+
+		color: black;
+		cursor: pointer;
+
+	}
+
+	.modal_knap p {
+		font-family: 'nunito', sans-serif;
+		text-align: left;
+		padding-left: 250px;
+		padding-top: 22px;
+		font-size: 2.3em;
+	}
+
+	img.sort_item {
+		position: absolute;
+		height: 13vw;
+		width: 13vw;
+	}
+
+	#modal_vindue {
+		height: 100%;
+	}
+
+	#menuVindue {
+		height: 40vw;
+		top: 5vw;
+		opacity: 0.9;
+	}
+
+	#footer {
+		width: 100vw;
+		margin-top: 4vw;
+		border-style: solid;
+		height: 20vw;
+		bottom: 0vw;
+	}
+
+	#footer p {
+		list-style: none;
+		font-family: 'nunito', sans-serif;
+	}
+
+
+	#footer b {
+		font-family: sans-serif;
+		font-size: 13px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+
+
+	#footerTxt {
+		background-color: #b3b3b3;
+		margin: 0;
+		height: 10vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#footer .text1 {
+		background-color: #fce5f1;
+		margin: 0;
+		height: 10vw;
+		line-height: 1.3;
+		font-size: 12px;
+	}
+
+	#footer .text2 {
+		background-color: #fce5f1;
+		margin: 0;
+		height: 10vw;
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	#footerLogo {
+		margin: 0;
+		height: 10vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background-color: #b3b3b3;
+	}
+
+	.footerLogo_logo {
+		height: 9vw;
+		margin: auto;
+		position: relative;
+		background-color: #b3b3b3;
+	}
+
+	.sponsor {
+		height: 6vw;
+		margin: 1px;
+		object-fit: cover;
+
+	}
+
+	/* --------- NAV UDLEJNING --------*/
+	#udlejningnav a {
+
+		padding: 1.2vw;
+		font-weight: bold;
+	}
+
+
+	.sidenav a {
+		margin: 5vw 0 0 4vw;
+		text-decoration: none;
+		font-size: 2em;
+		color: #818181;
+		display: block;
+		transition: 0.3s
+	}
+
+	.pilHoejre {
+		transform: rotate(180deg);
+		position: absolute;
+		top: 3vw;
+		right: 3vw;
+		z-index: 40;
+
+	}
+
+	.pilVenstre {
+		transform: scale(1);
+	}
+
+	.pil_img {
+		width: 3vw;
+		right: 3vw;
+		top: 3vw;
+		position: absolute;
+		transform: scale(0.8);
+
+	}
+
+	100% {
+
+		transform: scale(1);
+	}
+}
+
+#nyhedsSubmit {
+
+	background-color: white;
+	border-color: white;
+	border: 2px solid white;
+	border-radius: 6px;
+	font-weight: bold;
+	font-family: 'nunito', sans-serif;
+	color: darkslategrey;
+
+
+}
+
+.toggleNyhedsbrev1 {
+	opacity: 1;
+	width: 28vw !important;
+	transition: 0.3s;
+
+}
+
+
+.toggleNyhedsbrev2 {
+	opacity: 1;
+	width: 7vw;
+	right: 1.7vw;
+}
+
+#nyhedsTxt {
+	opacity: 0;
+	transition: 1s;
+	margin: 1vw 0 0 2vw;
+	cursor: default;
+}
+
+#nyhedsArea {
+	opacity: 0;
+	transition: 0.2s;
+	margin: .5vw 0 0 2vw;
+
+}
+
+#nyhedsSubmit {
+	opacity: 0;
+
+}
+
+input[type=submit] {
+
+	color: black;
+	cursor: pointer;
+
+}
+
+.modal_knap p {
+	font-family: 'nunito', sans-serif;
+	text-align: left;
+	padding-left: 250px;
+	padding-top: 22px;
+	font-size: 2.3em;
+}
+
+.modal_knap {}
+
+img.sort_item {
+	position: absolute;
+	height: 13vw;
+	width: 13vw;
+}
+
+#modal_vindue {
+	height: 100%;
+}
+
+#menuVindue {
+	height: 40vw;
+	top: 5vw;
+	opacity: 0.9;
+}
+
+#footer {
+	width: 100vw;
+	margin-top: 4vw;
+	border-style: solid;
+	height: 20vw;
+	bottom: 0vw;
+}
+
+#footer p {
+	list-style: none;
+	font-family: 'nunito', sans-serif;
+}
+
+
+#footer b {
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+
+#footerTxt {
+	background-color: #b3b3b3;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#footer .text1 {
+	background-color: #fce5f1;
+	margin: 0;
+	height: 12vw;
+	line-height: 1.1;
+	font-size: 12px;
+}
+
+#footer .text2 {
+	background-color: #fce5f1;
+	margin: 0;
+	height: 12vw;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#footerLogo {
+	margin: 0;
+	height: 10vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #b3b3b3;
+}
+
+.footerLogo_logo {
+	height: 9vw;
+	margin: auto;
+	position: relative;
+	background-color: #b3b3b3;
+}
+
+.sponsor {
+	height: 6vw;
+	margin: 1px;
+	object-fit: cover;
+
+}
+
+/* --------- NAV UDLEJNING --------*/
+
+#udlejningnav a {
+
+	padding: 1.2vw;
+	font-weight: bold;
+}
+
+
+.sidenav a {
+	margin: 5vw 0 0 4vw;
+	text-decoration: none;
+	font-size: 2em;
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+
+.pilHoejre {
+	transform: rotate(180deg);
+	position: absolute;
+	top: 3vw;
+	right: 3vw;
+	z-index: 40;
+
+}
+
+.pilVenstre {
+	transform: scale(1);
+}
+
+.pil_img {
+	width: 3vw;
+	right: 3vw;
+	top: 3vw;
+	position: absolute;
+	transform: scale(0.8);
+
+}
+
+.navi {
+
+	z-index: 7;
+	right: 0vw;
+	position: absolute;
+	right: 0vw;
+	font-size: 1.1em;
+	height: 3vw;
+	top: .3vw;
+	font-weight: bold;
+
+
+}
+
+.navi a {
+
+
+	color: black;
+	font-family: 'Nunito', sans-serif;
+	text-decoration: none;
+	padding: 1vw;
+	position: relative;
+	transition: .6s ease;
+
+}
+
+
+.navi a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #d3072a;
+	width: 0;
+	left: 50%;
+	bottom: 0.6vw;
+	transform: translateX(-50%);
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
+
+
+}
+
+.navi a:hover {
+
+	color: #d3072a;
+	font-family: 'Nunito', sans-serif;
+	padding: 1vw;
+	width: 80%;
+	font-weight: bold;
+
+}
+
+.navi a:hover:after {
+	width: 50%;
+}
+
+.container_body h2 {
+
+	font-family: 'nunito', sans-serif;
+	font-size: 2em;
+	color: #D3072A;
+	margin-top: 3vw;
+	margin-bottom: 1.5vw;
+}
+
+.container_body h3 {
+
+	font-family: 'nunito', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 1.5vw;
+	margin-top: 2vw;
+
+}
+
+.container_body p {
+
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 1.6vw;
+}
+
+.container_body {
+
+	margin-left: 25vw;
+	margin-right: 25vw;
+	margin-top: 30vw;
+
+}
+
+.container_body a {
+
+
+	color: #24195d;
+	font-family: sans-serif;
+	font-size: 1em;
+	position: relative;
+	transition: 0.4s ease;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.container_body a:hover {
+
+	color: #24195d;
+	font-family: sans-serif;
+	width: 100%;
+	font-size: 1em;
+}
+
+.container_body a:hover:after {
+	width: 90%;
+}
+
+.container_body a:after {
+	content: "";
+	position: absolute;
+	font-weight: bold;
+	height: 2px;
+	background-color: #D3072A;
+	width: 0;
+	left: 50%;
+	bottom: -.4vw;
+	transform: translateX(-50%);
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1) all;
+
+}
+
+.container_body li {
+
+
+	text-decoration-color: #D3072A;
+	color: #24195d;
+	font-family: sans-serif;
+	font-size: 1em;
+	list-style-type: circle;
+	line-height: 1.6em;
+	font-weight: bold;
+}
+
+iframe {
+
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+}
+
+/* --------- SINGLE VIEW --------*/
+
+#singleblock {
+
+	transform: scale(2);
+	margin-left: 53vw;
+	margin-top: 25vw;
+	margin-bottom: 10vw;
+}
+
+#singleblock #template_tittel:hover {
+
+	font-size: 1.5em;
+	width: 100%;
+	opacity: 0;
+	height: 11.9vw;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .7);
+	font-family: 'nunito', sans-serif;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+
+}
+
+#singleblock #template_tittel {
+
+	font-size: 1.5em;
+	width: 100%;
+	height: 11.9vw;
+	opacity: 1;
+	position: absolute;
+	left: 0vw;
+	top: -18.3vw;
+	background-color: rgba(0, 0, 0, .7);
+	font-family: 'nunito', sans-serif;
+	position: absolute;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+
+}
+
+#singleblock #template_beskrivelse {
+	width: 20vw;
+	height: 10vw;
+	font-family: 'nunito', sans-serif;
+	font-size: 0.46em;
+}
+
+#singleblock #template_genre {
+	font-family: 'nunito', sans-serif;
+	left: 0vw;
+	top: 1vw;
+	font-size: 0.7em;
+}
+
+#singleblock #template_sted {
+	font-family: 'nunito', sans-serif;
+	left: 0vw;
+	top: 2vw;
+	font-size: 0.7em;
+}
+
+#singleblock #template_pris {
+	font-family: 'nunito', sans-serif;
+	right: 0vw;
+	top: 1vw;
+	font-size: 0.7em;
+}
+
+#singleblock #template_tid {
+	font-family: 'nunito', sans-serif;
+	right: 0vw;
+	top: 1.1vw;
+	font-size: 0.7em;
 }
