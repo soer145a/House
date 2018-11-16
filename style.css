@@ -371,6 +371,9 @@ body {
     margin-top: 25vw;
 }
 
+
+
+
 .topnav {
     background-color: white;
     overflow: hidden;
@@ -638,17 +641,71 @@ g tspan:hover {
 iframe {
     padding-bottom: 2vw;
     padding-top: 2vw;
+    width: 100%;
 }
+
+/* --------- SINGLE VIEW --------*/
 
 #singleblock {
-    transform: scale(2);
-    margin-left: 50vw;
-    margin-top: 10vw;
+    transform: scale(.7);
     margin-bottom: 10vw;
+    height: 100vw;
 }
 
-iframe {
+
+
+#singleblock #template_tittel {
+
+    font-size: 1.5em;
     width: 100%;
+    height: 15vw;
+    opacity: 1;
+    position: absolute;
+    left: 0vw;
+    top: -15vw;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: 'nunito', sans-serif;
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
+}
+
+#singleblock #template_beskrivelse {
+    width: 100vw;
+    height: 15vw;
+    margin-bottom: 10vw;
+    position: absolute;
+    font-family: 'nunito', sans-serif;
+    font-size: 1.3em;
+}
+
+#singleblock #template_genre {
+    font-family: 'nunito', sans-serif;
+    left: 0vw;
+    top: 40vw;
+    font-size: 1.3em;
+}
+
+#singleblock #template_sted {
+    font-family: 'nunito', sans-serif;
+    left: 0vw;
+    top: 2vw;
+    font-size: 0.7em;
+}
+
+#singleblock #template_pris {
+    font-family: 'nunito', sans-serif;
+    right: 0vw;
+    top: 1vw;
+    font-size: 0.7em;
+}
+
+#singleblock #template_tid {
+    font-family: 'nunito', sans-serif;
+    right: 0vw;
+    top: 1.1vw;
+    font-size: 0.7em;
 }
 
 
@@ -997,6 +1054,81 @@ iframe {
             object-fit: cover;
 
         }
+
+        #singleblock {
+
+            transform: scale(2);
+            margin-left: 53vw;
+            margin-top: 25vw;
+            margin-bottom: 10vw;
+        }
+
+        #singleblock #template_tittel:hover {
+
+            font-size: 1em;
+            width: 100%;
+            opacity: 0;
+            height: 11.9vw;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .7);
+            font-family: 'nunito', sans-serif;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+
+        }
+
+        #singleblock #template_tittel {
+
+            font-size: 1em;
+            width: 100%;
+            height: 11.9vw;
+            opacity: 1;
+            position: absolute;
+            left: 0vw;
+            top: -18.3vw;
+            background-color: rgba(0, 0, 0, .7);
+            font-family: 'nunito', sans-serif;
+            position: absolute;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+
+        }
+
+        #singleblock #template_beskrivelse {
+            width: 20vw;
+            height: 10vw;
+            font-family: 'nunito', sans-serif;
+            font-size: 0.46em;
+        }
+
+        #singleblock #template_genre {
+            font-family: 'nunito', sans-serif;
+            left: 0vw;
+            top: 1vw;
+            font-size: 0.7em;
+        }
+
+        #singleblock #template_sted {
+            font-family: 'nunito', sans-serif;
+            left: 0vw;
+            top: 2vw;
+            font-size: 0.7em;
+        }
+
+        #singleblock #template_pris {
+            font-family: 'nunito', sans-serif;
+            right: 0vw;
+            top: 1vw;
+            font-size: 0.7em;
+        }
+
+        #singleblock #template_tid {
+            font-family: 'nunito', sans-serif;
+            right: 0vw;
+            top: 1.1vw;
+            font-size: 0.7em;
+        }
+
 
         /* --------- NAV UDLEJNING --------*/
 
@@ -1409,7 +1541,7 @@ iframe {
         opacity: 1;
         position: absolute;
         left: 0vw;
-        top: -18.3vw;
+        top: -18.2vw;
         background-color: rgba(0, 0, 0, .7);
         font-family: 'nunito', sans-serif;
         position: absolute;
